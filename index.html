@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AH_TIME | COD Tournament</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Tahoma, sans-serif;
+    background: #080b12;
+    color: white;
+}
+
+header {
+    background: #111827;
+    padding: 25px 15px;
+    text-align: center;
+    border-bottom: 2px solid #e00035;
+}
+
+header h1 {
+    color: #ff1744;
+    font-size: 32px;
+    margin: 5px;
+    letter-spacing: 3px;
+}
+
+header p {
+    color: #aaa;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    background: #151b28;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 65px 15px;
+    background: linear-gradient(135deg,#170b16,#101827,#330015);
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: #ff1744;
+}
+
+.hero p {
+    color: #ddd;
+    line-height: 2;
+}
+
+button {
+    background: #e00035;
+    color: white;
+    border: none;
+    padding: 13px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    padding: 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.card {
+    background: #151b28;
+    border: 1px solid #333b4c;
+    padding: 22px;
+    border-radius: 12px;
+    margin: 18px 0;
+}
+
+.card h3 {
+    color: #ff1744;
+}
+
+.prizes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.prizes div {
+    flex: 1;
+    min-width: 100px;
+    text-align: center;
+    background: #20293a;
+    padding: 18px 5px;
+    border-radius: 10px;
+}
+
+.money {
+    color: #ffca28;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    background: #111827;
+    padding: 20px;
+    color: #888;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AH_TIME</h1>
+    <p>CALL OF DUTY MOBILE TOURNAMENT</p>
+</header>
+
+<nav>
+    <a href="#home">خانه</a>
+    <a href="#prizes">جوایز</a>
+    <a href="#rules">قوانین</a>
+    <a href="#register">ثبت‌نام</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>آماده نبرد هستی؟</h2>
+    <p>
+        به تورنمنت رسمی AH_TIME خوش آمدید.
+        <br>
+        رقابت کن، پیروز شو و جایزه بگیر!
+    </p>
+    <button onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">
+        ورود به تورنمنت
+    </button>
+</section>
+
+<div class="container">
+
+    <section class="card" id="prizes">
+        <h3>🏆 جوایز تورنمنت</h3>
+
+        <div class="prizes">
+            <div>
+                🥇 تیم اول
+                <p class="money">۱۵۰ هزار تومان</p>
+            </div>
+
+            <div>
+                🥈 تیم دوم
+                <p class="money">۸۰ هزار تومان</p>
+            </div>
+
+            <div>
+                🥉 تیم سوم
+                <p class="money">۶۰ هزار تومان</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="card" id="rules">
+        <h3>📜 قوانین مسابقه</h3>
+        <p>۱. رعایت احترام به بازیکنان الزامی است.</p>
+        <p>۲. استفاده از هرگونه تقلب ممنوع است.</p>
+        <p>۳. حضور به‌موقع در مسابقه الزامی است.</p>
+    </section>
+
+    <section class="card" id="register">
+        <h3>🎮 ثبت‌نام تورنمنت</h3>
+        <p>برای شرکت در مسابقه با مدیریت ارتباط بگیر.</p>
+        <button onclick="alert('اطلاعات ثبت‌نام به‌زودی فعال می‌شود!')">
+            ثبت‌نام
+        </button>
+    </section>
+
+</div>
+
+<footer>
+    AH_TIME © 2026
+    <br>
+    ALL RIGHTS RESERVED
+</footer>
+
+</body>
+</html>
